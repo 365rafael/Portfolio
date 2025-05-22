@@ -50,6 +50,37 @@ body {
   transform: scale(1.2);
 }
 
+.sobre {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  line-height: 1.6;
+  color: #f0f0f0;          /* texto claro */
+}
+
+.sobre h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffffff;          /* título ainda mais forte */
+}
+
+.sobre p {
+  margin-bottom: 15px;
+  color: #dcdcdc;          /* um cinza claro suave */
+}
+
+.sobre a {
+  color: #4eaaff;          /* azul claro para links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sobre a:hover {
+  text-decoration: underline;
+}
+
+
 
 .links {
   width: 100%;
