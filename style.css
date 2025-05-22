@@ -16,8 +16,7 @@ body {
 .profile img {
   width: 120px;
   height: 120px;
-  border-radius: 50%;
-  border: 3px solid #00ff88;
+  border-radius: 10%;
   margin-bottom: 1rem;
 }
 
@@ -25,6 +24,32 @@ body {
   margin: 0.5rem 0;
   font-size: 1.8rem;
 }
+
+/* Redes sociais */
+.social {
+  margin: 10px 0;
+  background-color: #00ff88;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+.social img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+  
+}
+
+.social img:hover {
+  transform: scale(1.2);
+}
+
 
 .links {
   width: 100%;
