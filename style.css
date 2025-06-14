@@ -1,113 +1,265 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #2f2f2f, #1c1c1c);
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.profile {
-  text-align: center;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.profile img {
-  width: 120px;
-  height: 120px;
-  border-radius: 10%;
-  margin-bottom: 1rem;
+/* Header */
+header {
+    background-color: #0d6efd;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
-.profile h1 {
-  margin: 0.5rem 0;
-  font-size: 1.8rem;
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Redes sociais */
-.social {
-  margin: 10px 0;
-  background-color: #00ff88;
-  padding-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+header h1 {
+    font-size: 24px;
 }
 
-.social a {
-  text-decoration: none;
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-.social img {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.3s ease;
-  
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-.social img:hover {
-  transform: scale(1.2);
+header nav ul li a:hover {
+    color: #ffc107;
 }
 
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--card-border);
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 999;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+/* Sections */
+section {
+    padding: 100px 0 60px;
+}
+
+.home {
+    background-color: white;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.home h2 {
+    font-size: 36px;
+}
+
+.home h2 span {
+    color: #0d6efd;
+}
+
+.home p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #0d6efd;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #084298;
+}
+
+/* Sobre */
 .sobre {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-  text-align: center;
-  line-height: 1.6;
-  color: #f0f0f0;          /* texto claro */
+    background-color: #e9ecef;
+    border-radius: 10px;
 }
 
 .sobre h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #ffffff;          /* título ainda mais forte */
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .sobre p {
-  margin-bottom: 15px;
-  color: #dcdcdc;          /* um cinza claro suave */
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
-.sobre a {
-  color: #4eaaff;          /* azul claro para links */
-  text-decoration: none;
-  font-weight: bold;
+/* Projetos */
+.projetos h2 {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.sobre a:hover {
-  text-decoration: underline;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
 }
 
-
-
-.links {
-  width: 100%;
-  max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 2rem;
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.link {
-  background-color: #00ff88;
-  color: #000;
-  text-align: center;
-  padding: 1rem;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: transform 0.2s ease;
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-.link:hover {
-  transform: scale(1.05);
+.card h3 {
+    margin-bottom: 10px;
+    color: #0d6efd;
 }
 
+.card p {
+    margin-bottom: 15px;
+}
+
+.card a {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Contato */
+.contato {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contato h2 {
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.contato p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social a {
+    background-color: #0d6efd;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    min-width: 120px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.social a:hover {
+    background-color: #084298;
+}
+
+/* Footer */
 footer {
-  margin-top: 3rem;
-  font-size: 0.9rem;
-  opacity: 0.7;
+    background-color: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+/* Responsivo específico para contato */
+@media (max-width: 500px) {
+    .social a {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Mobile: 2 linhas com rolagem horizontal */
+@media (max-width: 768px) {
+    .cards {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc(50% - 10px);
+        grid-template-rows: repeat(2, auto);
+        overflow-x: auto;
+        gap: 20px;
+        padding-bottom: 10px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .card {
+        scroll-snap-align: start;
+    }
+}
+
+/* Scrollbar opcional, estilizada */
+.cards::-webkit-scrollbar {
+    height: 8px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+    background-color: #0d6efd;
+    border-radius: 10px;
+}
+
+.cards::-webkit-scrollbar-track {
+    background-color: #e9ecef;
 }

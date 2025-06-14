@@ -36,77 +36,115 @@
 
 
 <body>
-  <div class="profile">
-    <img src="Rafael1.png" alt="Minha Foto" />
-    <h1>Rafael Arantes</h1>
 
-    <div class="social">
-      <a href="https://github.com/365rafael" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
-      </a>
-      <a href="https://www.linkedin.com/in/rafaelarantes365/" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
-      </a>
-      <a href="https://wa.me/5534997132663?text=Vim%20do%20seu%20site%20Portf%C3%B3lio" target="_blank">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" />
-      </a>
+  <header class="cabecalho">
+    <div class="container">
+      <h1>Rafael Arantes</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <section class="sobre">
-    <h2>Sobre Mim</h2>
-    <p>
-      Olá! Sou <strong>Rafael Arantes</strong>, desenvolvedor apaixonado por tecnologia e soluções práticas. Criei este
-      portfólio para compartilhar alguns dos meus principais aplicativos e ferramentas, que foram desenvolvidos para
-      facilitar o dia a dia de pessoas e empresas.
-    </p>
-    <p>
-      Aqui você encontra aplicativos como <strong>geradores de link para WhatsApp</strong>, <strong>leitor de QR
-        Code</strong>, <strong>planner semanal</strong>, <strong>calculadora de IMC</strong>, <strong>player de música
-        local</strong> e muito mais. Todos são gratuitos, responsivos e podem ser utilizados diretamente do navegador,
-      sem necessidade de instalação.
-    </p>
-    <p>
-      Meu objetivo é criar soluções simples, intuitivas e acessíveis. Estou sempre em busca de novos desafios e
-      oportunidades para desenvolver projetos que gerem impacto positivo.
-    </p>
-    <p>
-      💼 Se você deseja colaborar, contratar meus serviços ou apenas trocar uma ideia, fique à vontade para me chamar no
-      <a href="https://wa.me/5534997132663?text=Vim%20do%20seu%20site%20Portf%C3%B3lio" target="_blank">WhatsApp</a>,
-      visitar meu <a href="https://github.com/365rafael" target="_blank">GitHub</a> ou meu <a
-        href="https://www.linkedin.com/in/rafaelarantes365/" target="_blank">LinkedIn</a>.
-    </p>
-    <p>Confira meus principais aplicativos 👇</p>
+
+  <section id="home" class="home">
+    <div class="container">
+      <h2>Olá, eu sou <span>Rafael Arantes</span></h2>
+      <p>Desenvolvedor Backend / Fullstack apaixonado por tecnologia e soluções criativas.</p>
+      <a href="#contato" class="btn">Fale Comigo</a>
+    </div>
   </section>
 
-  <div class="links">
-    <h2>Frontend</h2>
-    <a class="link" href="https://365rafael.github.io/qrcode_app/" target="_blank">🔳 Leitor de QR Code</a>
-    <a class="link" href="https://365rafael.github.io/GeradorLinkZap/" target="_blank">📲 Gerador de Link WhatsApp</a>
-    <a class="link" href="https://365rafael.github.io/Direct-Whats/" target="_blank">💬 Mensagem Direta WhatsApp</a>
-    <a class="link" href="https://365rafael.github.io/planner_semanal/" target="_blank">🗓️ Planner Semanal</a>
-    <a class="link" href="https://365rafael.github.io/RespostasRapidas/" target="_blank">⚡ Respostas Rápidas</a>
-    <a class="link" href="https://365rafael.github.io/player_de_musica_local/" target="_blank">🎵 Player de Música</a>
-    <a class="link" href="https://365rafael.github.io/alcoolGasolinaPWA/" target="_blank">⛽ Álcool ou Gasolina?</a>
-    <a class="link" href="https://calculadora-imc-pi-rosy.vercel.app/" target="_blank">🧮 Calculadora de IMC</a>
-    <a class="link" href="https://meu-formulario-ten.vercel.app/" target="_blank">📝 Formulário de cadastro - PDF</a>
-    <a class="link" href="https://365rafael.github.io/redimencionador-imagem/" target="_blank">📷 Redimencionador de Imagens</a>
-    <h2>Backend</h2>
-    <a class="link" href="https://github.com/365rafael/EstoqueVendas" target="_blank">📦 Gestor de Estoque e Vendas (ASP
-      NET 8.0)</a>
-  </div>
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <h2>Sobre Mim</h2>
+      <p>Sou apaixonado por desenvolvimento backend / fullstack, tecnologia e inovação. Atuo criando soluções robustas e
+        eficientes utilizando tecnologias como C#, ASP.NET, SQL Server e MySQL. Também desenvolvo projetos pessoais que
+        me ajudam a evoluir constantemente na área.</p>
+    </div>
+  </section>
+
+  <section id="projetos" class="projetos">
+    <div class="container">
+      <h2>Meus Projetos</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Estoque e Vendas</h3>
+          <p>Aplicação ASP.NET Core para gestão de estoque e vendas.</p>
+          <a href="https://github.com/365rafael/EstoqueVendas" target="_blank">Ver Projeto</a>
+        </div>
+        <div class="card">
+          <h3>QR Code App</h3>
+          <p>Gerador de QR Code simples e funcional em HTML e JavaScript.</p>
+          <a href="https://365rafael.github.io/qrcode_app/" target="_blank">Ver Projeto</a>
+        </div>
+        <div class="card">
+          <h3>Comparador Combustível</h3>
+          <p>App que compara preço de gasolina e álcool para decidir qual compensa.</p>
+          <a href="https://365rafael.github.io/alcoolGasolinaPWA/" target="_blank">Ver Projeto</a>
+        </div>
+        <div class="card">
+          <h3>Redimencionador de imagens</h3>
+          <p>App altera tamanho de imagens.</p>
+          <a href="https://365rafael.github.io/redimencionador-imagem/" target="_blank">Ver Projeto</a>
+        </div>
+        <div class="card">
+          <h3>Formulário de cadastro</h3>
+          <p>App que recebe dados de cadastro e gera PDF para o cliente baixar.</p>
+          <a href="https://meu-formulario-ten.vercel.app/" target="_blank">Ver Projeto</a>
+        </div>
+        <div class="card">
+          <h3>Calculadora de IMC</h3>
+          <p>App que calcula IMC e emite o diagnóstico e informa a faixa de peso ideal para a altura.</p>
+          <a href="https://calculadora-imc-pi-rosy.vercel.app/" target="_blank">Ver Projeto</a>
+        </div>
+        <div class="card">
+          <h3>Planner semanal</h3>
+          <p>App para criar um planner semanal para organização pessoal.</p>
+          <a href="https://365rafael.github.io/planner_semanal/" target="_blank">Ver Projeto</a>
+        </div>
+        <div class="card">
+          <h3>Direct Whats</h3>
+          <p>App para enviar mensagem sem precisar salvar o contato da outra pessoa.</p>
+          <a href="https://365rafael.github.io/Direct-Whats/" target="_blank">Ver Projeto</a>
+        </div>
+        <div class="card">
+          <h3>Link Zap</h3>
+          <p>App gerador de link com mensagem personalizada para o Whatsapp.</p>
+          <a href="https://365rafael.github.io/GeradorLinkZap/" target="_blank">Ver Projeto</a>
+        </div>
+        <div class="card">
+          <h3>QrCode Generator</h3>
+          <p>App que gera QrCode e dá opção para baixar.</p>
+          <a href="https://365rafael.github.io/qrcode_app/" target="_blank">Ver Projeto</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <div class="container">
+      <h2>Contato</h2>
+      <p>Vamos conversar? Me envie uma mensagem!</p>
+      <div class="social">
+        <a href="https://wa.me/5534997132663" target="_blank">WhatsApp</a>
+        <a href="mailto:rafael.imu@gmail.com">Email</a>
+        <a href="https://github.com/365rafael" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/rafaelarantes365" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+
 
   <footer>
-    <p>© 2025 Rafael Arantes</p>
-    <p>Visitas:</p>
-    <!-- hitwebcounter Code START -->
-    <a href="https://www.hitwebcounter.com" target="_blank">
-      <img src="https://hitwebcounter.com/counter/counter.php?page=20716658&style=0036&nbdigits=7&type=ip&initCount=0"
-        title="Counter Widget" Alt="Visit counter For Websites" border="0" /></a>
+    <p>Feito com ❤️ por Rafael Arantes &copy; 2025</p>
   </footer>
 
-
-  <script src="script.js"></script>
 </body>
 
 </html>
